@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false //混淆代码的开关
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//自定义混淆规则文件
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.test:core-ktx:1.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Mockito：本地单元测试模拟框架
+    implementation 'org.robolectric:robolectric:4.4'
+    implementation 'org.mockito:mockito-core:3.12.4'
+    // mock final类时出现错误：Mockito cannot mock/spy because : - final class，增加如下模拟框架
+    implementation 'org.mockito:mockito-inline:3.12.4'
+    // PowerMock：Mockito的一种扩展（以实现完成对private/static/final方法的Mock）
+//    implementation 'org.powermock:powermock-module-junit4:2.0.9'
+//    implementation 'org.powermock:powermock-api-mockito2:2.0.9'
+
+    /*bugly集成*/
+    /*注意：4.0.0之前版本，还需要添加nativecrashreport依赖：*/
+//    implementation 'com.tencent.rqd:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如4.0.3
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.mars:mars-xlog:1.2.5'
+}
