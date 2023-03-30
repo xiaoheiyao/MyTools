@@ -6,7 +6,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import com.lqz.commonsdk.log.LogMonitor
-import com.lqz.commonsdk.log.TXGLog
 import com.lqz.commonsdk.utils.AppInfoUtil
 import com.tencent.bugly.crashreport.CrashReport
 import com.tencent.mars.BuildConfig
@@ -29,6 +28,8 @@ class ApplicationObserver(val application: Application) : LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     fun onCreate() {
         Log.e(TAG, "onCreate:")
+        //todo 初始化一个AppContext类，供整个app调用！！！
+        AppContext.initAppContext(application)
         logMonitor = LogMonitor(application)
         logMonitor.start()
 

@@ -11,12 +11,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CommonRes" />
             <option value="$PROJECT_DIR$/CommonSDK" />
             <option value="$PROJECT_DIR$/RTKSDK" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/connection-android" />
             <option value="$PROJECT_DIR$/connection-core" />
+            <option value="$PROJECT_DIR$/module-gcs" />
             <option value="$PROJECT_DIR$/protocol" />
+            <option value="$PROJECT_DIR$/../TopXGun Algorithm/algorithm" />
+            <option value="$PROJECT_DIR$/../TopXGun Imap/imap" />
+            <option value="$PROJECT_DIR$/../TopXGun Imap/imap-arcgis10" />
           </set>
         </option>
       </GradleProjectSettings>

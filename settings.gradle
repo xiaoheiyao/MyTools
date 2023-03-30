@@ -25,3 +25,12 @@ include ':connection-core'
 include ':connection-android'
 include ':RTKSDK'
 include ':protocol'
+include ':imap'
+include ':imap-arcgis10'
+include ':algorithm-lib'
+project(':imap').projectDir = new File('../TopXGun Imap/imap')
+project(':imap-arcgis10').projectDir = new File('../TopXGun Imap/imap-arcgis10')
+include ':module-gcs'
+include ':CommonRes'
+
+project(':algorithm-lib').projectDir = new File('../TopXGun Algorithm/algorithm')

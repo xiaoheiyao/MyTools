@@ -14,6 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTools"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="F7qabTlVzP7RwfbSxswQ0FGuY9L8Fwvg" />
+
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
