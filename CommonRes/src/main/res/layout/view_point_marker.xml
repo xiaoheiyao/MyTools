@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_point_no"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:gravity="center"
+        android:background="@mipmap/ic_border_point"
+        android:includeFontPadding="false"
+        android:textColor="@color/public_white"
+        android:text=""
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_point_distance"
+        android:layout_below="@id/tv_point_no"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="100m"
+        android:textSize="10sp"
+        android:textColor="@color/public_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:background="@drawable/bg_round_black"
+        android:visibility="gone"
+        />
+</merge>

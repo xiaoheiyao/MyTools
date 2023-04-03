@@ -19,7 +19,6 @@ public class AreaLimit {
     public SectorLimit sector;//扇形
     public List<Coordinate> coordinates;
 
-
     public class PolygonLimit{
         public List<double[]> coordinates;
         public float height;

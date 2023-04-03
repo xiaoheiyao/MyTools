@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/MyTools/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/drawable/bg_round_black.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/drawable/bg_zone_area.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/drawable/drawable.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/layout.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/view_person_point.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/view_plane_marker.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/view_point_marker.xml" value="0.1" />
       </map>
     </option>
   </component>
