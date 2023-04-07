@@ -11,6 +11,8 @@
         <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/view_person_point.xml" value="0.1" />
         <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/view_plane_marker.xml" value="0.1" />
         <entry key="..\:/MyTools/MyTools/CommonRes/src/main/res/layout/view_point_marker.xml" value="0.1" />
+        <entry key="..\:/MyTools/MyTools/app/src/main/res/layout/activity_main.xml" value="0.10885416666666667" />
+        <entry key="..\:/MyTools/MyTools/module-gcs/src/main/res/layout/activity_map.xml" value="0.10885416666666667" />
       </map>
     </option>
   </component>

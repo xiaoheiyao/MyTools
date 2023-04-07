@@ -3,4 +3,11 @@
     package="com.lqz.gcs">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application>
+        <activity
+            android:name="com.lqz.gcs.app.activity.MapActivity"
+            android:exported="false" />
+    </application>
+
 </manifest>
