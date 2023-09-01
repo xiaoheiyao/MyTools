@@ -1,4 +1,4 @@
-pluginManagement {
+pluginManagement { //用于管理Gradle插件的版本和来源仓库，帮助在项目中统一管理插件的配置。
     repositories {
         gradlePluginPortal()
         google()
@@ -13,7 +13,7 @@ pluginManagement {
         maven { url 'https://esri.jfrog.io/artifactory/arcgis' }
     }
 }
-dependencyResolutionManagement {
+dependencyResolutionManagement { //用于管理项目中依赖项的版本，确保整个项目使用相同的依赖项版本，避免版本冲突和不一致性。
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
@@ -29,6 +29,9 @@ dependencyResolutionManagement {
         maven { url 'https://esri.jfrog.io/artifactory/arcgis' }
         maven { url 'https://jitpack.io' }
         google()
+        maven {
+            url 'https://esri.jfrog.io/artifactory/arcgis'
+        }
     }
 }
 rootProject.name = "MyTools"
@@ -47,3 +50,4 @@ include ':module-gcs'
 include ':CommonRes'
 
 project(':algorithm-lib').projectDir = new File('../TopXGun Algorithm/algorithm')
+include ':MyMap'

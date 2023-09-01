@@ -47,9 +47,9 @@ class MapActivity : AppCompatActivity() {
     private fun setUpMapIfNeeded() {
         mIMapViewDelegate!!.getMapAsyc { map ->
             mIMap = map
-            mIMap!!.uiSettings.setZoomControlsEnabled(false)
-            mIMap!!.uiSettings.setRotateGesturesEnabled(false)
-            mIMap!!.uiSettings.setCompassEnabled(false)
+            mIMap!!.uiSettings.setZoomControlsEnabled(false) //设置空间缩放
+            mIMap!!.uiSettings.setRotateGesturesEnabled(true) //设置旋转
+            mIMap!!.uiSettings.setCompassEnabled(true) //设置指南针
             /*设置地图加载监听器*/mIMap!!.setOnMapLoadedListener {
             //afterMapLoaded();
             mapView.postDelayed(Runnable {
@@ -74,7 +74,7 @@ class MapActivity : AppCompatActivity() {
         map.setMapType(MapType.MAP_TYPE_SATELLITE)
     }
 
-    private fun onBaseMapLoaded(){
+    private fun onBaseMapLoaded() {
 
     }
 }
